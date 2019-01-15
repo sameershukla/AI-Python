@@ -13,7 +13,7 @@ class Perceptron:
 
         return 1.0 if activation >= 0.0 else 0.0
 
-    def train_weights(self, inputs, lr):
+    def perceptron(self, inputs, lr):
         self.weights = [0.0 for i in range(len(inputs[0]))]
         self.errors = []
         for epoch in range(self.no_of_epochs):
